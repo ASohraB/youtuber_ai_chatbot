@@ -13,3 +13,4 @@ flake8==6.0.0
 streamlit_chat==0.0.2.2
 huggingface_hub==0.15.1
 sentence_transformers
+pywhatkit
