@@ -7,10 +7,16 @@ from chatbot import YouTubeChatbot
 from components.sidebar import sidebar
 from langchain.memory import ConversationBufferWindowMemory
 from streamlit_chat import message
+# pip install pywhatkit
+import pywhatkit as kit
 
-
-def index():
-
+def index():    
+    # Specify the phone number (with country code) and the message
+    phone_number = "+16138902537"
+    message = "Hello from Python! This is an instant WhatsApp message."
+    
+    # Send the message instantly
+    kit.sendwhatmsg_instantly(phone_number, message)
     def put_media_player():
         with elements("media_player"):
             video_url = st.session_state.get('video_url')
