@@ -19,7 +19,7 @@ def index():
     def clear_submit():
         st.session_state["submit"] = False
 
-    st.set_page_config(page_title="YoutuberGPT", page_icon="🤖", layout="wide")
+    st.set_page_config(page_title="YoutuberGPT1", page_icon="🤖", layout="wide")
     st.header("🤖YoutuberGPT")
     sidebar()
 
